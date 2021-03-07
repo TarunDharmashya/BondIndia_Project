@@ -9,10 +9,12 @@
   <body>
     <h1>KYC Form</h1>
     <p>(<span class="star">*</span>) are compulsory.</p>
-    <div class="section1">
+    <div class="row">
+
+    <div class="section1 col-sm-3">
       <h3>1. AADHAR Details</h3>
       <form class="Aadhar" action="index.html" method="post">
-        <div class="row" style="width:50%; margin: auto;">
+        <div class="row" style=" margin: auto;">
         <div class="input-group input-group-sm mb-3 col-sm" >
           <span class="input-group-text" style="width:150px;" id="inputGroup-sizing-sm">Name on Aadhar <span class="star">*</span> </span>
           <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
@@ -25,10 +27,10 @@
       </form>
     </div>
 
-    <div class="section2">
+    <div class="section2 col-sm-3">
       <h3>2. PAN card Details</h3>
       <form class="PanCard" action="index.html" method="post">
-        <div class="row" style="width:50%; margin: auto;">
+        <div class="row" style=" margin: auto;">
         <div class="input-group input-group-sm mb-3 col-sm" >
           <span class="input-group-text" style="width:150px;"  id="inputGroup-sizing-sm">Name on PAN Card <span class="star">*</span> </span>
           <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
@@ -41,6 +43,7 @@
       </form>
 
     </div>
+  </div>
     <div class="section3">
       <h3>3. Enter Your Bank Details</h3>
       <div class="container">
@@ -113,8 +116,10 @@
 
     <div class="section4">
       <h3>4. Enter Your Address</h3>
+      <div class="row">
+        <div class="col-sm-6">
       <p>As Per Aadhar Card</p>
-      <form class="Address row" style="width:50%; margin: auto;" action="index.html" method="post">
+      <form class="Address row" style=" margin: auto;" action="index.html" method="post">
         <div class="input-group input-group-sm mb-3 col-sm-3" >
           <span class="input-group-text" style="width:150px;"  id="inputGroup-sizing-sm">House No. <span class="star">*</span> </span>
           <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
@@ -132,9 +137,11 @@
           <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
         </div>
       </form>
+      </div>
 
+      <div class="col-sm-6">
       <p>Communication Address (Optional)</p>
-      <form class="Address row" style="width:50%; margin: auto;" action="index.html" method="post">
+      <form class="Address row" style=" margin: auto;" action="index.html" method="post">
         <div class="input-group input-group-sm mb-3 col-sm-3" >
           <span class="input-group-text" style="width:150px;"  id="inputGroup-sizing-sm">House No. </span>
           <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
@@ -152,11 +159,13 @@
           <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
         </div>
       </form>
+      </div>
+      </div>
     </div>
 
 
     <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-      <a href="success.html"><button type="button" class="btn btn-primary">Submit</button></a>
+      <a href="success.html"><button type="button" class="btn-lg btn-outline-primary">Submit</button></a>
     </div>
 
     <script src="index.js" charset="utf-8"></script>
