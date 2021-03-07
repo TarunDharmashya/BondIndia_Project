@@ -14,11 +14,11 @@
       <form class="Aadhar" action="index.html" method="post">
         <div class="row" style="width:50%; margin: auto;">
         <div class="input-group input-group-sm mb-3 col-sm" >
-          <span class="input-group-text" id="inputGroup-sizing-sm">Name on Aadhar <span class="star">*</span> </span>
+          <span class="input-group-text" style="width:150px;" id="inputGroup-sizing-sm">Name on Aadhar <span class="star">*</span> </span>
           <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
         </div>
         <div class="input-group input-group-sm mb-3 col-sm">
-          <span class="input-group-text" id="inputGroup-sizing-sm">Aadhar Number <span class="star">*</span> </span>
+          <span class="input-group-text" style="width:150px;" id="inputGroup-sizing-sm">Aadhar Number <span class="star">*</span> </span>
           <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
         </div>
         </div>
@@ -30,11 +30,11 @@
       <form class="PanCard" action="index.html" method="post">
         <div class="row" style="width:50%; margin: auto;">
         <div class="input-group input-group-sm mb-3 col-sm" >
-          <span class="input-group-text" id="inputGroup-sizing-sm">Name on PAN Card <span class="star">*</span> </span>
+          <span class="input-group-text" style="width:150px;"  id="inputGroup-sizing-sm">Name on PAN Card <span class="star">*</span> </span>
           <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
         </div>
         <div class="input-group input-group-sm mb-3 col-sm">
-          <span class="input-group-text" id="inputGroup-sizing-sm">PAN Number <span class="star">*</span> </span>
+          <span class="input-group-text" style="width:150px;"  id="inputGroup-sizing-sm">PAN Number <span class="star">*</span> </span>
           <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
         </div>
         </div>
@@ -67,6 +67,7 @@
           </div>
           <div class="col-sm">
             <select class="BankNames" name="">
+              <option value="Select">--Select--</option>
               <option value="BOI">Bank Of India</option>
               <option value="SBI">State Bank Of India</option>
               <option value="BOB">Bank Of Baroda</option>
@@ -79,20 +80,85 @@
           </div>
           <div class="col-sm">
             <select class="AccTyp" name="AccTyp">
+              <option value="Select">--Select--</option>
               <option value="Saving">Savings</option>
               <option value="Current">Current</option>
             </select>
           </div>
           <div class="col-sm">
-            <input type="checkbox" name="default" value="">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
           </div>
         </div>
       </div>
+      <div class="left-align">
 
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+      <label for="flexRadioDefault">I provide my Consent for DP Account.</label>
     </div>
+
+      <div class="Bank">
+
+      <form class="Bank row" style="width:50%; margin: auto;" action="index.html" method="post">
+        <div class="input-group input-group-sm mb-3 col-sm-3" >
+          <span class="input-group-text" style="width:150px;"  id="inputGroup-sizing-sm">DP-ID or DP-Name <span class="star">*</span> </span>
+          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <div class="input-group input-group-sm mb-3 col-sm-3" >
+          <span class="input-group-text" style="width:150px;"  id="inputGroup-sizing-sm">Client ID (8 digits) <span class="star">*</span> </span>
+          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        </div>
+      </form>
+    </div>
+    </div>
+
     <div class="section4">
+      <h3>4. Enter Your Address</h3>
+      <p>As Per Aadhar Card</p>
+      <form class="Address row" style="width:50%; margin: auto;" action="index.html" method="post">
+        <div class="input-group input-group-sm mb-3 col-sm-3" >
+          <span class="input-group-text" style="width:150px;"  id="inputGroup-sizing-sm">House No. <span class="star">*</span> </span>
+          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <div class="input-group input-group-sm mb-3 col-sm-3" >
+          <span class="input-group-text" style="width:150px;"  id="inputGroup-sizing-sm">Street <span class="star">*</span> </span>
+          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <div class="input-group input-group-sm mb-3 col-sm" >
+          <span class="input-group-text" style="width:150px;"  id="inputGroup-sizing-sm">City <span class="star">*</span> </span>
+          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <div class="input-group input-group-sm mb-3 col-sm" >
+          <span class="input-group-text" style="width:150px;"  id="inputGroup-sizing-sm">Pin Code <span class="star">*</span> </span>
+          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        </div>
+      </form>
 
+      <p>Communication Address (Optional)</p>
+      <form class="Address row" style="width:50%; margin: auto;" action="index.html" method="post">
+        <div class="input-group input-group-sm mb-3 col-sm-3" >
+          <span class="input-group-text" style="width:150px;"  id="inputGroup-sizing-sm">House No. </span>
+          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <div class="input-group input-group-sm mb-3 col-sm-3" >
+          <span class="input-group-text" style="width:150px;"  id="inputGroup-sizing-sm">Street </span>
+          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <div class="input-group input-group-sm mb-3 col-sm" >
+          <span class="input-group-text" style="width:150px;"  id="inputGroup-sizing-sm">City </span>
+          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <div class="input-group input-group-sm mb-3 col-sm" >
+          <span class="input-group-text" style="width:150px;"  id="inputGroup-sizing-sm">Pin Code </span>
+          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        </div>
+      </form>
     </div>
 
+
+    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+      <a href="success.html"><button type="button" class="btn btn-primary">Submit</button></a>
+    </div>
+
+    <script src="index.js" charset="utf-8"></script>
   </body>
 </html>
