@@ -1,6 +1,6 @@
 body{
-  background-color: rgb(255 162 245 / 31%);
-  color: rgb(13 45 162);
+  background-color: rgb(216 218 222 / 22%);
+  color: Black;
   text-align: center;
   margin: 3% auto;
 }
@@ -11,10 +11,10 @@ body{
   padding: 2px;
 }
 .AccTyp{
-  padding: 2px 40px;
+  padding: 2px 70px 2px 2px;
 }
 .container{
-  background-color:rgb(76 138 162 / 90%);
+  background-color:rgb(149 154 156 / 90%);
   padding: 5px 15px 10px 5px;
 }
 .section1,.section2,.section3,.section4{
@@ -22,6 +22,7 @@ body{
 }
 .section1,.section2{
   text-align: left;
+  width: 100%;
 }
 .aligncen{
   text-align: center;
@@ -35,4 +36,11 @@ h3{
 }
 .Bank{
   margin: 2% auto;
+}
+.outerdiv{
+  border: 2px solid grey;
+  background-color: #ccc5c5a8;
+  margin : 10% 20%;
+  padding: 2%;
+  border-radius: 10px;
 }
