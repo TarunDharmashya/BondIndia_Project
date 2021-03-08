@@ -7,170 +7,140 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div class="outerdiv">
+    <section class="wizard-section">
+		<div class="no-gutters">
+			<div class="">
+				<div class="wizard-content-left d-flex justify-content-center align-items-center">
+					<h1>Welcome to BondIndia</h1>
+				</div>
+			</div>
+			<div class="">
+				<div class="form-wizard">
+					<form action="" method="post" role="form">
+						<div class="form-wizard-header">
+							<p>(*) Fill all form field to go next step</p>
+							<ul class="list-unstyled form-wizard-steps clearfix">
+								<li class="active"><span>1</span></li>
+								<li><span>2</span></li>
+								<li><span>3</span></li>
+								<li><span>4</span></li>
+							</ul>
+						</div>
+						<fieldset class="wizard-fieldset show">
+							<h5>PAN Card Information</h5>
+							<div class="form-group">
+								<input type="text" class="form-control wizard-required" id="pname">
+								<label for="pname" class="wizard-form-text-label">Name on PAN Card*</label>
+								<div class="wizard-form-error"></div>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control wizard-required" id="pnumber">
+								<label for="pnumber" class="wizard-form-text-label">PAN Card Number*</label>
+								<div class="wizard-form-error"></div>
+							</div>
 
-    <h1>KYC Form</h1>
-    <p>(<span class="star">*</span>) are compulsory.</p>
-    <div class="row">
+							<div class="form-group">
+								<input type="text" class="form-control wizard-required" id="password">
+								<label for="password" class="wizard-form-text-label">Password*</label>
+								<div class="wizard-form-error"></div>
+							</div>
+							<div class="form-group clearfix">
+								<a href="javascript:;" class="form-wizard-next-btn float-right">Next</a>
+							</div>
+						</fieldset>
+						<fieldset class="wizard-fieldset">
+							<h5>Aadhar Card Information</h5>
+							<div class="form-group">
+								<input type="text" class="form-control wizard-required" id="adname">
+								<label for="adname" class="wizard-form-text-label">Name on Aadhar*</label>
+								<div class="wizard-form-error"></div>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control wizard-required" id="adnumber">
+								<label for="adnumber" class="wizard-form-text-label">Aadhar No.*</label>
+								<div class="wizard-form-error"></div>
+							</div>
+							<div class="form-group clearfix">
+								<a href="javascript:;" class="form-wizard-previous-btn float-left">Previous</a>
+								<a href="javascript:;" class="form-wizard-next-btn float-right">Next</a>
+							</div>
+						</fieldset>
+						<fieldset class="wizard-fieldset">
+							<h5>Bank Information</h5>
+							<div class="form-group">
+								<input type="text" class="form-control wizard-required" id="bname">
+								<label for="bname" class="wizard-form-text-label">Bank Name*</label>
+								<div class="wizard-form-error"></div>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control wizard-required" id="brname">
+								<label for="brname" class="wizard-form-text-label">Branch Name*</label>
+								<div class="wizard-form-error"></div>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control wizard-required" id="acname">
+								<label for="acname" class="wizard-form-text-label">Account Name*</label>
+								<div class="wizard-form-error"></div>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control wizard-required" id="acon">
+								<label for="acon" class="wizard-form-text-label">Account Number*</label>
+								<div class="wizard-form-error"></div>
+							</div>
+              <div class="form-group">
+								Account Type
+								<div class="wizard-form-radio">
+									<input name="radio-name" id="savings" type="radio">
+									<label for="mastercard">Savings</label>
+								</div>
+								<div class="wizard-form-radio">
+									<input name="radio-name" id="current" type="radio">
+									<label for="current">Current</label>
+								</div>
+							</div>
+							<div class="form-group clearfix">
+								<a href="javascript:;" class="form-wizard-previous-btn float-left">Previous</a>
+								<a href="javascript:;" class="form-wizard-next-btn float-right">Next</a>
+							</div>
+						</fieldset>
+						<fieldset class="wizard-fieldset">
+							<h5>Contact Address</h5>
+              <h6>As per Aadhar</h6>
 
-    <div class="section1 col-sm-3">
-      <h3>1. AADHAR Details</h3>
-      <form class="Aadhar" action="index.html" method="post">
-        <div class="row" style="">
-        <div class="input-group input-group-sm mb-3 col-sm" >
-          <span class="input-group-text" style="width:150px;" id="inputGroup-sizing-sm">Name on Aadhar <span class="star">*</span> </span>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-        </div>
-        <div class="input-group input-group-sm mb-3 col-sm">
-          <span class="input-group-text" style="width:150px;" id="inputGroup-sizing-sm">Aadhar Number <span class="star">*</span> </span>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-        </div>
-        </div>
-      </form>
-    </div>
+							<div class="form-group">
+								<input type="text" class="form-control wizard-required" id="honame">
+								<label for="honame" class="wizard-form-text-label">House No / Street No*</label>
+								<div class="wizard-form-error"></div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-6">
+									<div class="form-group">
+										<input type="text" class="form-control wizard-required" id="cityname">
+										<label for="cityname" class="wizard-form-text-label">City*</label>
+										<div class="wizard-form-error"></div>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6">
+									<div class="form-group">
+										<input type="text" class="form-control wizard-required" id="pincode">
+										<label for="pincode" class="wizard-form-text-label">Pincode*</label>
+										<div class="wizard-form-error"></div>
+									</div>
+								</div>
+							</div>
 
-    <div class="section2 col-sm-3">
-      <h3>2. PAN card Details</h3>
-      <form class="PanCard" action="index.html" method="post">
-        <div class="row" style="">
-        <div class="input-group input-group-sm mb-3 col-sm" >
-          <span class="input-group-text" style="width:150px;"  id="inputGroup-sizing-sm">Name on PAN Card <span class="star">*</span> </span>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-        </div>
-        <div class="input-group input-group-sm mb-3 col-sm">
-          <span class="input-group-text" style="width:150px;"  id="inputGroup-sizing-sm">PAN Number <span class="star">*</span> </span>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-        </div>
-        </div>
-      </form>
+							<div class="form-group clearfix">
+								<a href="javascript:;" class="form-wizard-previous-btn float-left">Previous</a>
+								<a href="success.html" class="form-wizard-submit float-right">Submit</a>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
 
-    </div>
-  </div>
-    <div class="section3">
-      <h3>3. Enter Your Bank Details</h3>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            Bank IFSC
-          </div>
-          <div class="col-sm">
-            Bank Name
-          </div>
-          <div class="col-sm">
-            Account Number
-          </div>
-          <div class="col-sm">
-            Account Type
-          </div>
-          <!-- <div class="col-sm">
-            Default
-          </div> -->
-        </div>
-        <div class="row">
-          <div class="col-sm">
-            <input type="text" style="width:150px"name="BankIFSC" placeholder="IFSC Code">
-          </div>
-          <div class="col-sm">
-            <select class="BankNames" name="">
-              <option value="Select">--Select--</option>
-              <option value="BOI">Bank Of India</option>
-              <option value="SBI">State Bank Of India</option>
-              <option value="BOB">Bank Of Baroda</option>
-              <option value="BOA">Bank Of Allahabad</option>
-              <option value="PNB">Punjab National Bank</option>
-            </select>
-          </div>
-          <div class="col-sm">
-            <input type="number" style="width:150px" name="AccNo" placeholder="Account Number">
-          </div>
-          <div class="col-sm">
-            <select class="AccTyp" name="AccTyp">
-              <option value="Select">--Select--</option>
-              <option value="Saving">Savings</option>
-              <option value="Current">Current</option>
-            </select>
-          </div>
-          <!-- <div class="col-sm">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-          </div> -->
-        </div>
-      </div>
-      <div class="left-align">
-
-      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-      <label for="flexRadioDefault">I provide my Consent for DP Account.</label>
-    </div>
-
-      <div class="Bank">
-
-      <form class="Bank row" style="width:50%; margin: auto;" action="index.html" method="post">
-        <div class="input-group input-group-sm mb-3 col-sm-3" >
-          <span class="input-group-text" style="width:150px;"  id="inputGroup-sizing-sm">DP-ID or DP-Name <span class="star">*</span> </span>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-        </div>
-        <div class="input-group input-group-sm mb-3 col-sm-3" >
-          <span class="input-group-text" style="width:150px;"  id="inputGroup-sizing-sm">Client ID (8 digits) <span class="star">*</span> </span>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-        </div>
-      </form>
-    </div>
-    </div>
-
-    <div class="section4">
-      <h3>4. Enter Your Address</h3>
-      <div class="row">
-        <div class="col-sm-6">
-      <p>As Per Aadhar Card</p>
-      <form class="Address row" style=" margin: auto;" action="index.html" method="post">
-        <div class="input-group input-group-sm mb-3 col-sm-3" >
-          <span class="input-group-text" style="width:85px;"  id="inputGroup-sizing-sm">House No. <span class="star">*</span> </span>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-        </div>
-        <div class="input-group input-group-sm mb-3 col-sm-3" >
-          <span class="input-group-text" style="width:85px;"  id="inputGroup-sizing-sm">Street <span class="star">*</span> </span>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-        </div>
-        <div class="input-group input-group-sm mb-3 col-sm" >
-          <span class="input-group-text" style="width:85px;"  id="inputGroup-sizing-sm">City <span class="star">*</span> </span>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-        </div>
-        <div class="input-group input-group-sm mb-3 col-sm" >
-          <span class="input-group-text" style="width:85px;"  id="inputGroup-sizing-sm">Pin Code <span class="star">*</span> </span>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-        </div>
-      </form>
-      </div>
-
-      <div class="col-sm-6">
-      <p>Communication Address (Optional)</p>
-      <form class="Address row" style=" margin: auto;" action="index.html" method="post">
-        <div class="input-group input-group-sm mb-3 col-sm-3" >
-          <span class="input-group-text" style="width:80px;"  id="inputGroup-sizing-sm">House No. </span>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-        </div>
-        <div class="input-group input-group-sm mb-3 col-sm-3" >
-          <span class="input-group-text" style="width:80px;"  id="inputGroup-sizing-sm">Street </span>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-        </div>
-        <div class="input-group input-group-sm mb-3 col-sm" >
-          <span class="input-group-text" style="width:80px;"  id="inputGroup-sizing-sm">City </span>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-        </div>
-        <div class="input-group input-group-sm mb-3 col-sm" >
-          <span class="input-group-text" style="width:80px;"  id="inputGroup-sizing-sm">Pin Code </span>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-        </div>
-      </form>
-      </div>
-      </div>
-    </div>
-
-
-    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-      <a href="success.html"><button type="button" class="btn-lg btn-outline-primary">Submit</button></a>
-    </div>
-  </div>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="index.js" charset="utf-8"></script>
   </body>
 </html>
